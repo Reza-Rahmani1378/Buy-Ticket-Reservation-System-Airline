@@ -1,4 +1,4 @@
-package ir.maktab.home_work17.base.domain;
+package ir.maktab.btrs.btrsa.base.domain;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;

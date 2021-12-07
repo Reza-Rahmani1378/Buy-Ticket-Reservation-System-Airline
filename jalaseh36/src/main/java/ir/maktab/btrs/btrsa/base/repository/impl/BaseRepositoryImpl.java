@@ -1,7 +1,7 @@
-package ir.maktab.home_work17.base.repository.impl;
+package ir.maktab.btrs.btrsa.base.repository.impl;
 
-import ir.maktab.home_work17.base.domain.BaseEntity;
-import ir.maktab.home_work17.base.repository.BaseRepository;
+import ir.maktab.btrs.btrsa.base.domain.BaseEntity;
+import ir.maktab.btrs.btrsa.base.repository.BaseRepository;
 
 import javax.persistence.EntityManager;
 import java.io.Serializable;

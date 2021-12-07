@@ -1,8 +1,8 @@
-package ir.maktab.home_work17.base.service.impl;
+package ir.maktab.btrs.btrsa.base.service.impl;
 
-import ir.maktab.home_work17.base.domain.BaseEntity;
-import ir.maktab.home_work17.base.repository.BaseRepository;
-import ir.maktab.home_work17.base.service.BaseService;
+import ir.maktab.btrs.btrsa.base.domain.BaseEntity;
+import ir.maktab.btrs.btrsa.base.repository.BaseRepository;
+import ir.maktab.btrs.btrsa.base.service.BaseService;
 
 import java.io.Serializable;
 import java.util.List;
