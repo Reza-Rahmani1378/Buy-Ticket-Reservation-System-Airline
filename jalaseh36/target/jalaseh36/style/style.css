@@ -1,0 +1,373 @@
+* {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#divMenu,
+ul,
+li,
+li li {
+    margin: 0;
+    padding: 0;
+}
+
+#divMenu {
+    margin: auto;
+    width: 300px;
+    height: 27px;
+}
+
+#divMenu ul {
+    line-height: 25px;
+}
+
+#divMenu li {
+    list-style: none;
+    position: relative;
+    background: darkslategray;
+}
+
+#divMenu li li {
+    list-style: none;
+    position: relative;
+    background: teal;
+    left: 298px;
+    top: -27px;
+}
+
+
+#divMenu ul li a {
+    width: 298px;
+    height: 25px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #eee;
+}
+
+#divMenu ul ul {
+    position: absolute;
+    visibility: hidden;
+    top: 27px;
+}
+
+#divMenu ul li:hover ul {
+    visibility: visible;
+}
+
+#divMenu li:hover {
+    background-color: #945c7d;
+}
+
+#divMenu ul li:hover ul li a:hover {
+    background-color: #945c7d;
+}
+
+#divMenu a:hover {
+    font-weight: bold;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+p {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+hr {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+h1 {
+    margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    font-size: 36px;
+    line-height: 40px;
+    padding: 15px 15px 15px 15%;
+    color: #355681;
+    box-shadow:
+            inset 0 0 0 1px rgba(53,86,129, 0.4),
+            inset 0 0 5px rgba(53,86,129, 0.5),
+            inset -285px 0 35px white;
+    border-radius: 0 10px 0 10px;
+    background: #fff url(2.jpg) no-repeat center center;
+    background-size: 100px 100px;
+}
+
+h2 {
+    text-align: center;
+    margin: 1em 0 0.5em 0;
+    font-weight: normal;
+    position: relative;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.6);
+    font-size: 28px;
+    line-height: 40px;
+    background: #355681;
+    background: rgba(53, 86, 129, 0.8);
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 0 10px 0 10px;
+    box-shadow: inset 0 0 5px rgba(53, 86, 129, 0.5);
+    font-family: 'Muli', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #0074D9;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0074D9;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
+div.td-right td{
+    text-align: right;
+}
+
+div.td-left td {
+    text-align: left;
+}
+
+div.select-user h2 , table {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+    /***********************************************
+       Account Registartiona and Login
+    ***********************************************/
+.box,
+.regbox{
+    width: 320px;
+    height: 420px;
+    background: #2f3542;
+    margin: 0;
+    padding: 30px;
+    top: 55%;
+    left: 50%;
+    color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.avatar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    top: -22%;
+    position: absolute;
+    left: calc(50% - 75px);
+    border-radius: 50%;
+}
+
+.box h1{
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.box input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.box input[type="submit"] {
+    display: block;
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #eccc68;
+    color: #000;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.box input[type="submit"]:hover {
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #ff6348;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.box a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.box a:hover {
+    color: #eccc68;
+}
+
+
+
+
+.regbox .avatar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    top: -19%;
+    position: absolute;
+    left: calc(50% - 75px);
+    border-radius: 50%;
+}
+
+.regbox h1 {
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.regbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.regbox input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.regbox input[type="text"],
+.regbox input[type="password"] {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.regbox input[type="submit"] {
+    display: block;
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #eccc68;
+    color: #000;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.regbox input[type="submit"]:hover {
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #ff6348;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.regbox a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.regbox a:hover {
+    color: #eccc68;
+}
+
+div.custom p , h2 , h4 , table {
+    text-align: center;
+
+}
+
+div.center td {
+    text-align: center;
+}
