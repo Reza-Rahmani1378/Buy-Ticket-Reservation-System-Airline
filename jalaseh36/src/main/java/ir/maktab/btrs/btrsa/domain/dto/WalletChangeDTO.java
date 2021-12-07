@@ -1,4 +1,4 @@
-package ir.maktab.home_work17.domain.dto;
+package ir.maktab.btrs.btrsa.domain.dto;
 
 public class WalletChangeDTO {
     private Long customerId;
