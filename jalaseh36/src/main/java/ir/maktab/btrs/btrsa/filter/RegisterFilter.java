@@ -1,8 +1,8 @@
-package ir.maktab.home_work17.filter;
+package ir.maktab.btrs.btrsa.filter;
 
-import ir.maktab.home_work17.domain.Customer;
-import ir.maktab.home_work17.domain.enumeration.UserType;
-import ir.maktab.home_work17.utility.ApplicationContext;
+import ir.maktab.btrs.btrsa.domain.Customer;
+import ir.maktab.btrs.btrsa.domain.enumeration.UserType;
+import ir.maktab.btrs.btrsa.utility.ApplicationContext;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
