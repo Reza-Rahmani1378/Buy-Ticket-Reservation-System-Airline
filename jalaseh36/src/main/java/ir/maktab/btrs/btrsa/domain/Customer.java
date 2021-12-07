@@ -1,6 +1,6 @@
-package ir.maktab.home_work17.domain;
+package ir.maktab.btrs.btrsa.domain;
 
-import ir.maktab.home_work17.domain.enumeration.UserType;
+import ir.maktab.btrs.btrsa.domain.enumeration.UserType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

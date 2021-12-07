@@ -1,7 +1,7 @@
-package ir.maktab.home_work17.domain;
+package ir.maktab.btrs.btrsa.domain;
 
-import ir.maktab.home_work17.base.domain.BaseEntity;
-import ir.maktab.home_work17.domain.enumeration.WalletType;
+import ir.maktab.btrs.btrsa.base.domain.BaseEntity;
+import ir.maktab.btrs.btrsa.domain.enumeration.WalletType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
