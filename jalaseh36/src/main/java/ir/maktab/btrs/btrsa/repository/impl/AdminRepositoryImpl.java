@@ -13,6 +13,7 @@ public class AdminRepositoryImpl extends BaseRepositoryImpl<Admin, Long> impleme
 
     @Override
     public Class<Admin> getEntityClass() {
+        // get class Admin
         return Admin.class;
     }
 
